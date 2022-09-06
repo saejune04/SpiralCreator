@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Spiral Creator</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <div id="fps"> </div>
+    
+        <canvas id="drawingArea" width="800" height="800"></canvas> 
+        <div class="slidecontainer">
+            <p>Size: <span id = "sizeValue"></span></p>
+            <input type="range" min="100" max="1000" value="400" class="slider" id="sizeSlider">
+            <p>Number of Axis: <span id = "axisValue"></span></p>
+            <input type="range" min="1" max="10" value="2" class="slider" id="axisSlider">
+            <p>Number of Nodes: <span id = "nodeValue"></span></p>
+            <input type="range" min="0" max="100" value="10" class="slider" id="nodeSlider">
+            <p>Rotation Speed: <span id = "brrrValue"></span></p>
+            <input type="range" min="-10" max="10" value="0.4" class="slider" id="brrrSlider" step="0.05">
+            <p>Chaos Factor: <span id = "chaosValue"></span></p>
+            <input type="range" min="1" max="100" value="1" class="slider" id="chaosSlider">
+            <p>Color speed: <span id = "colorValue"></span></p>
+            <input type="range" min="0" max="10" value="1" class="slider" id="colorSlider">
+            <p>Max color saturation: <span id = "satValue"></span></p>
+            <input type="range" min="0" max="255" value="255" class="slider" id="satSlider">
+        </div>
+        <div class = "buttoncontainer">
+            <button class = "button" type = "button" id = "exactCoordsButton" onclick = "changeECState()">
+            <p>Exact coords: <span id = "exactCoordsValue"></span></p>
+            </button>
+        </div>
+        <script type = "text/javascript" src="SpiralCreator.js"?></script>
+    </body>
+</html>
